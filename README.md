@@ -1,2 +1,2 @@
-# hominid101.github.io
-Website for Hominid101
+# samitchaudhuri.github.io
+Website for Samit Chaudhuri
