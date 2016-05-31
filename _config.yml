@@ -1,2 +1,5 @@
 name: Samit Chaudhuri
 markdown: kramdown
+safe: true
+gems:
+  - jekyll-sitemap
