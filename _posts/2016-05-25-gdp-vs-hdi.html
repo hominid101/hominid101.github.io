@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html>
-<script src="http://www.w3schools.com/lib/w3data.js"></script>
-<div w3-include-html="http://markdown.io/https://raw.githubusercontent.com/samitchaudhuri/gdp-vs-hdi/master/README.md"></div>
+<div id="readme"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="_javascript/jquery.gh-readme.min.js"></script>
 <script>
-w3IncludeHTML();
+    $(function () {
+        var options = {
+            owner: 'samitchaudhuri',
+            repo: 'gdp-vs-hdi'
+        };
+        $('#readme').readme(options);
+    });
 </script>
-</html>
 
 
