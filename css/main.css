@@ -1,6 +1,10 @@
 body {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
     font-family: 'Open Sans', 'Helvetica', 'Sans-Serif';
 	font-size: 100%;
+	word-wrap: break-word;	
+	/* color: #333;*/
     color: #444444;
     margin: 60px auto;
     width: 70%;
@@ -21,26 +25,43 @@ footer {
     font-size: .8em;
 }
 
-p, blockquote, ul, ol, dl, li, table, pre {
-	margin: 15px 0;
+p, blockquote, ul, ol, dl, li, table {
+	margin: 0;
 }
 
-code, tt {
-	margin: 0 2px;
-	padding: 0 5px;
-	white-space: nowrap;
-	border: 1px solid #eaeaea;
-	background-color: #f8f8f8;
+code {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 0.85em;
+	margin: 15px 2px 15px;
+	background-color: rgba(0,0,0,0.04);
 	border-radius: 3px;
+	white-space: nowrap;	
 }
 
 pre code {
-	margin: 0;
-	padding: 0;
 	white-space: pre;
-	border: none;
-	background: transparent;
+	display: inline;
+	overflow-x: scroll;
+	overflow-y: hidden;		
+	word-wrap: normal;
+	margin: 0;	
+	line-height: inherit;
+	background-color: transparent;
+	border: 0;
 }
+
+pre {
+	word-wrap: normal;
+	overflow: auto;	
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	margin: 15px 2px 15px;
+	padding: 10px;
+	color: #393939;		
+	background-color: #fafafb;
+	border-radius: 3px;
+	border: 1px solid #cacaca;
+}
+
 
 blockquote {
 	border-left: 4px solid #dddddd;
@@ -65,7 +86,9 @@ a.absent {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 20px 0 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.5;
 	padding: 0;
 	font-weight: bold;
 	-webkit-font-smoothing: antialiased;
