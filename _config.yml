@@ -24,6 +24,19 @@ lsi: false
 highlighter: rouge
 markdown: kramdown
 
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+
+quiet:    false
+defaults: []
 
 # Markdown Processors
 rdiscount:
